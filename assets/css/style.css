@@ -1,0 +1,657 @@
+@font-face {
+  font-family: Flama-Bold;
+  src: url("../webfonts/Flama-Bold.ttf");
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: Flama-Medium;
+  font-stretch: normal;
+  font-style: normal;
+  unicode-range: U+0-10FFFF;
+  src: url("../webfonts/Flama-Medium.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Flama-Light;
+  src: url("../webfonts/Flama-Light.ttf");
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: Flama-Regular;
+  src: url("../webfonts/Flama.ttf");
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  unicode-range: U+0-10FFFF;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: Flama-Light, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+a, .button, button {
+  transition: all 0.3s ease-out 0s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus, button:focus, input:focus, textarea:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul, ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Flama-Bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 0px;
+  line-height: 1.35;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-family: Flama-Regular;
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.custom-container {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+header {
+  background-color: rgb(252, 202, 46);
+  padding: 15px 0px;
+  margin-bottom: 3px !important;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo img {
+  width: 100%;
+  max-width: 165px;
+}
+
+.header-right a {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  font-family: Flama-Regular;
+}
+
+.banner-area {
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: scroll;
+  background-size: cover;
+  background-image: url("../img/noobru-advantage-supplement-1.jpg");
+  padding-top: 60px;
+  padding-bottom: 85px;
+}
+
+.banner-wrap {
+  display: flex;
+  align-items: flex-end;
+}
+
+.banner-left-content h3 {
+  font-family: Flama-Light;
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 32px;
+  margin-top: 20px;
+}
+
+.banner-left-content {
+  width: 100%;
+  max-width: 560px;
+}
+
+.banner-right-content {
+  width: 100%;
+  max-width: 418px;
+}
+
+.banner-left-content ul li {
+  font-size: 17px;
+  font-family: Flama-Medium;
+  margin-top: 16px;
+  line-height: 24px;
+  padding-left: 37px;
+  position: relative;
+}
+
+p.off {
+  font-family: Flama-Regular;
+  font-size: 17px;
+  margin-top: 28px;
+  margin-bottom: 35px;
+}
+
+a.big-btn {
+  padding: 15px 24px;
+  margin: 0px;
+  font-family: Flama-Bold;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 145, 255);
+  max-width: 372px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+}
+
+p.off span {
+  font-family: Flama-Bold;
+}
+
+.banner-right-content img {
+  width: 100%;
+  margin-bottom: -30px;
+}
+
+.banner-left-content ul li::after {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: url("../img/check.png") 0% 0% / contain no-repeat;
+  content: "";
+  width: 26px;
+  height: 24px;
+}
+
+.offer-area {
+  background: #000;
+  padding: 15px 0px;
+}
+
+.offer-area h5 {
+  font-family: Flama Medium;
+  line-height: 26px;
+  font-size: 19px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+span.offer {
+  color: #fdcc30;
+  font-family: 'Flama-Bold';
+}
+
+.facility-area {
+  background-color: #f5f3f3;
+  padding: 50px 0 20px;
+}
+
+.facility-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-facility {
+  text-align: center;
+  max-width: 260px;
+}
+
+.single-facility img {
+  width: 100%;
+}
+
+.single-facility h3 {
+  margin-bottom: 3px;
+  margin-top: 8px;
+}
+.single-facility:nth-child(1) img {
+  max-width: 40px;
+}
+
+.single-facility:nth-child(2) img {
+  max-width: 62px;
+}
+
+.single-facility:nth-child(3) img {
+  max-width: 56px;
+}
+.images-area {
+  display: flex;
+  align-items: center;
+}
+
+.left-images-area {
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right-images-area {
+  width: 100%;
+  max-width: 50%;
+}
+
+.left-images-des {
+  max-width: 400px;
+  margin-right: 100px;
+}
+
+.left-images-des h2 {
+  margin-bottom: 20px;
+}
+
+.left-imag-area {
+  display: flex;
+  align-items: center;
+}
+
+.left-big-img {
+  width: 100%;
+  max-width: 50%;
+}
+
+.right-img-wrap {
+  width: 100%;
+  max-width: 50%;
+}
+
+.right-img-des {
+  max-width: 380px;
+  margin-left: 60px;
+}
+
+.right-img-des ul li {
+  font-family: 'Flama-Regular';
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  padding-left: 40px;
+  position: relative;
+}
+.right-images-area img {
+  width: 100%;
+}
+.left-big-img img {
+  width: 100%;
+}
+.right-img-des ul li:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 26px;
+  height: 24px;
+  background: url(../img/check-white.png);
+  z-index: 99;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cta-area {
+  padding: 60px 0px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: scroll;
+  background-size: cover;
+  background-image: url(../img/noobru-advantage-supplement-5.png);
+  margin-top: -3px;
+}
+
+.cta-des {
+  text-align: center;
+}
+
+.cta-des a {
+  margin: 0 auto;
+}
+
+.cta-des h2 {
+  margin-bottom: 20px;
+}
+.need-noobru-wrap {
+  display: flex;
+  padding-top: 45px;
+  align-items: center;
+}
+
+.left-need {
+  width: 100%;
+  max-width: 55%;
+}
+
+.need-right {
+  width: 100%;
+  max-width: 45%;
+}
+.need-noobru-area h2 {
+    text-align: center;
+}
+
+.need-noobru-area {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.left-need img {
+    width: 100%;
+    display: block;
+    margin-left: -100px;
+    max-width: 480px;
+}
+
+.single-need h3 {
+    font-size: 22px;
+    font-family: 'Flama-Light';
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+.how-to-use-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+
+.how-to-use-area {
+  background: #f5f3f3;
+}
+
+.single-how-to-use img {
+  width: 100%;
+  max-width: 256px;
+}
+
+.single-how-to-use h5 {
+  font-size: 20px;
+  font-family: 'Flama-Regular';
+  font-weight: normal;
+  margin-top: 12px;
+}
+
+.single-how-to-use {
+  text-align: center;
+  max-width: 255px;
+}
+
+.how-to-use-area h2 {
+  text-align: center;
+}
+
+.how-to-use-area {
+  padding-top: 80px;
+  padding-bottom: 75px;
+}
+.single-how-to-use p {
+  margin: 0;
+  font-family: 'Flama-Regular';
+}
+.left-ingreditens-img {
+  width: 100%;
+  max-width: 50%;
+}
+
+.ingrdients-left-img-area {
+  display: flex;
+  align-items: center;
+}
+
+.left-ingreditens-img img {
+  width: 100%;
+}
+
+.right-ingredintes-text {
+  max-width: 470px;
+  padding-left: 70px;
+}
+.what-people-say-area {
+  background:url(../img/noobru-advantage-supplement-9.jpg);
+  padding: 90px 0px;
+}
+.what-people-say-des {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.what-people-say-des a {
+    margin: 0 auto;
+}
+
+.what-peole-rview h3 {
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Flama-Regular';
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.what-peole-rview {
+    margin-top: 45px;
+}
+
+p.revw-autohr {
+    font-family: 'Flama-Regular';
+    margin-bottom: 40px !important;
+}
+
+.what-peole-rview p {
+    margin-bottom: 15px;
+}
+.rating-area {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.left-rating {
+  width: 100%;
+  max-width: 120px;
+}
+
+.rating-des {
+  width: 100%;
+  padding-left: 17px;
+}
+
+.rating-img img {
+  width: 100%;
+  max-width: 780px;
+}
+
+.rating-scrore h3 {
+  font-size: 55px;
+}
+
+.rating-scrore img {max-width: 100px;width: 100%;}
+
+.rating-scrore p {
+  font-size: 16px;
+  font-family: 'Flama-Regular';
+  color: #898888;
+}
+
+.single-user-rating h6 {
+  font-size: 16px;
+  font-family: 'Flama-Medium';
+  margin-bottom: 8px;
+}
+
+.single-user-rating img {
+  width: 100%;
+  max-width: 100px;
+  margin-bottom: 8px;
+}
+
+.single-user-rating {
+  max-width: 75%;
+}
+
+.rating-img {
+  margin-bottom: 40px;
+}
+
+.bottom-banner-area {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+  background-image: url(../img/noobru-advantage-supplement-6.png);
+  background-color: #fecd32;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.bottom-banner-des {
+  max-width: 490px;
+}
+
+.bottom-banner-des h2 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.bottom-banner-des h3 {
+  font-family: 'Flama-Light';
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.bottom-banner-des p {
+  font-family: 'Flama-Regular';
+}
+
+.bottom-banner-des a {
+  margin-top: 40px;
+}
+.footer-area {
+  background: #373737;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-left p {
+  font-family: 'Flama-Regular';
+  line-height: 18px;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+.footer-right ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right ul li a {
+  color: #fff;
+  font-size: 13px;
+  font-family: 'Flama-Regular';
+  margin: 0px 5px;
+}
+
+.footer-content {
+  max-width: 790px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  font-size: 13px;
+  font-family: 'Flama-Regular';
+  color: #b5b5b5;
+  text-align: center;
+}
+
+.dmca {
+  text-align: center;
+}
+
+.dmca img {
+  max-width: 150px;
+  width: 100%;
+}
